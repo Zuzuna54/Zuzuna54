@@ -1,16 +1,79 @@
-## Hi there 👋
+## Giorgi Giorgobiani
 
-<!--
-**Zuzuna54/Zuzuna54** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Senior AI Platform Engineer** — I build the infrastructure that agent systems run on:
+orchestration, retrieval, evaluation, and the cost and latency controls that decide whether a
+system survives contact with production.
 
-Here are some ideas to get you started:
+Nine years of production engineering, the last several on LLM and agent platforms.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### In production
+
+A **multi-tenant conversation-intelligence platform** turning ~100 hours of calls a week into
+structured business intelligence — nine queue-driven workers across seven queues each with its own
+dead-letter queue, retrieval over 3,072-dimension embeddings in pgvector, a 24-tool
+function-calling assistant, and an MCP server exposing the intelligence layer to external agents.
+Tenant isolation by Postgres row-level security in a single deployment. Compute cost down ~94% by
+moving off per-task serverless containers to capacity providers tuned per workload shape,
+autoscaled on queue backlog per task rather than CPU.
+
+A **10-agent NLP pipeline** on a decentralized data platform — a meta-orchestrator fanning out to
+seven stateless model agents in parallel, merging through a single writer into a social graph.
+Content-hash idempotency made the whole thing replayable: wipe Postgres, rebuild from source
+events, get identical output. Pipelines declared as infrastructure-as-code, so a new one ships as a
+stack file without recompiling any service.
+
+An **embedded AI companion platform** — custom ESP32-S3 hardware, four memory layers across Redis,
+Postgres and a graph store, and a streaming voice loop under 500ms. Every session reprocesses the
+full prior history rather than reading a fixed window, so recall doesn't degrade as the window
+slides.
+
+Earlier: founding engineer at a legal-AI startup through SOC 2 Type 2, and ML platform tooling in
+biotech.
+
+---
+
+### What's pinned
+
+**Keeping agents accountable while they build** — the problem I keep returning to. Agents that
+write code are easy; agents you can trust unattended are not.
+
+- **[loop-kit](https://github.com/Zuzuna54/loop-kit)** — a portable autonomous build loop. Fresh
+  context per iteration, builder separated from judge, and evidence-gated marking so a feature
+  can't go green unless it re-proves green.
+- **[sprint-harness](https://github.com/Zuzuna54/sprint-harness)** — Shape Up + SPARC with drift
+  control, using inject-violation-catch-restore to verify the guardrails actually fire.
+- **[inspector-hook](https://github.com/Zuzuna54/inspector-hook)** — cross-IDE visibility into what
+  AI coding assistants are doing to your files, in real time.
+
+**Agentic systems**
+
+- **[jobsearch-automation](https://github.com/Zuzuna54/jobsearch-automation)** — a local-first
+  automation OS: ingest, score, tailor, then a hard human gate before anything is sent. Next.js
+  dashboard over Postgres, with an LLM harness that runs faithfulness checks against fabrication.
+- **[Topic-Modelling](https://github.com/Zuzuna54/Topic-Modelling)** — real-time chat analysis into
+  a social graph with relationship intelligence and LLM-driven topic modelling.
+
+**Architecture**
+
+- **[systems-architecture-studies](https://github.com/Zuzuna54/systems-architecture-studies)** —
+  C4, sequence, and component diagrams for two production systems, written as pattern studies.
+  Autoscaling on backlog-per-task, fan-out reads with a single writer, a promotion ladder that
+  never demotes, content-hash idempotency.
+
+---
+
+### Stack
+
+`TypeScript` `Python` · `AWS` `Pulumi` `CDKTF` `Docker` `Kubernetes` ·
+`PostgreSQL + pgvector` `Redis` `Neo4j` `Kafka` · `Next.js` `Node.js` `FastAPI`
+
+---
+
+📍 New York, NY · Remote (US) &nbsp;&nbsp;·&nbsp;&nbsp; 🔎 Open to Senior AI Platform / AI Infrastructure roles
+
+[Website](https://zuzuna54.github.io/) ·
+[Résumé](https://zuzuna54.github.io/resume.pdf) ·
+[LinkedIn](https://www.linkedin.com/in/giorgi-giorgobiani-282883153) ·
+[Email](mailto:giorgigiorgobiani54@gmail.com)
