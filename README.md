@@ -66,8 +66,14 @@ write code are easy; agents you can trust unattended are not.
 
 ### Stack
 
-`TypeScript` `Python` · `AWS` `Pulumi` `CDKTF` `Docker` `Kubernetes` ·
-`PostgreSQL + pgvector` `Redis` `Neo4j` `Kafka` · `Next.js` `Node.js` `FastAPI`
+| | |
+|---|---|
+| **AI & LLM** | Multi-agent orchestration · agentic workflows · agent runtimes · RAG pipelines · vector search (pgvector) · embeddings · semantic clustering · Model Context Protocol (MCP) servers · streaming STT/TTS pipelines · prompt versioning · LLM observability · cost and latency optimization · OpenAI / Anthropic / Gemini / Mistral APIs · open-weight TTS/STT |
+| **Cloud & Infra** | AWS (ECS, SQS, Lambda, S3, RDS, AppSync, CloudWatch, ECR, EC2, VPC, CloudFront) · Pulumi (TypeScript) · CDKTF · Docker · Kubernetes · GitHub Actions · Serverless · GCP |
+| **Data** | PostgreSQL 17 (Row Level Security, pgvector) · Redis · FalkorDB · Neo4j · DynamoDB · MongoDB · Elasticsearch · Kafka · Prisma · TypeORM |
+| **Languages** | TypeScript · JavaScript · Python · C/C++ (embedded firmware) · Java · SQL · Cypher |
+| **Backend & API** | Node.js · Express · FastAPI · GraphQL · AppSync · Flask · Vert.x |
+| **Frontend** | React · Next.js · React Native · Redux · Tailwind · D3.js |
 
 ---
 
